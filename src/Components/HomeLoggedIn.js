@@ -3,7 +3,7 @@ import React, { useContext, useEffect, useState } from "react";
 import StateContext from "../Context/StateContext";
 import DispatchContext from "../Context/DispatchContext";
 function HomeLoggedIn() {
-  const [days, setTheDays] = useState('--');
+  const [days, setTheDays] = useState("--");
   const [hours, setTheHours] = useState("--");
   const [minutes, setTheMinutes] = useState("--");
   const [seconds, setTheSeconds] = useState("--");
@@ -73,7 +73,7 @@ function HomeLoggedIn() {
         <div className="row m-0">
           <div className="col-12 col-lg-7 col-md-7 col-sm-12 ">
             <h1 className="text">Have you performed exercise today?</h1>
-            <h3 className="textsmall">Time left to unlock next badge...</h3>
+            <h3 className="textsmall">Time left to unlock next badge....</h3>
             <div className="time">
               <div className="days">
                 {days}
