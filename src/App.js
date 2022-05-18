@@ -17,7 +17,7 @@ import FlashMessages from "./Components/FlashMessages";
 //Context
 import StateContext from "./Context/StateContext";
 import DispatchContext from "./Context/DispatchContext";
-axios.defaults.baseURL = "http://localhost:8000/";
+axios.defaults.baseURL = "https://fitness-warrior-backend.herokuapp.com";
 function App() {
   const initialState = {
     loggedIn: Boolean(localStorage.getItem("fitnessWarriorAppToken")),
