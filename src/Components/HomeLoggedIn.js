@@ -60,7 +60,6 @@ function HomeLoggedIn() {
       const response = await axios.post("/badges", {
         token: appState.user.token,
       });
-      console.log(response.data);
       setTheDays(response.data.nextMilestone - response.data.currentStreak);
     }
     fetchdata();

@@ -16,7 +16,6 @@ function LoginForm() {
         email,
         password,
       });
-      console.log(response.data.user);
       if (response.data.status.localeCompare("success") === 0) {
         appDispatch({ type: "login", data: response.data.user });
         appDispatch({
